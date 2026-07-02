@@ -1,26 +1,76 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-brand-black: #0A0A0A;
+  --color-brand-ink: #111111;
+  --color-brand-emerald: #00C853;
+  --color-brand-emeraldDark: #009E47;
+  --color-brand-white: #FFFFFF;
+  --color-brand-grey: #9CA3AF;
+  --color-brand-greyDark: #4B5563;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --shadow-glow: 0 0 40px rgba(0, 200, 83, 0.35);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-gradient-pan: gradient-pan 8s ease infinite;
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-count-up: count-up 2s ease-out forwards;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes gradient-pan {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes count-up {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-brand-black);
+  color: var(--color-brand-white);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--color-brand-emerald);
+  color: var(--color-brand-black);
+}
+
+.container-gastec {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-brand-emerald);
+  font-size: 0.75rem;
+  font-weight: 600;
 }
