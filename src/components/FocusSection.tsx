@@ -98,8 +98,7 @@ export default function FocusSection() {
             Our Focus
           </h2>
           <p className="mt-4 text-brand-grey max-w-2xl mx-auto">
-            Ten specialized business units operating across the energy, resources,
-            and technology value chain.
+            Ten specialized business unit assets operating across  Energy, Natural resources ( rare earth minerals), Future Mobility &amp; Green Transportation , Power, Water &amp; Environment, AI and a few more.
           </p>
         </motion.div>
 
