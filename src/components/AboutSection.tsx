@@ -61,12 +61,12 @@ export default function AboutSection() {
           >
             <p className="eyebrow mb-4">Who We Are</p>
             <h2 className="text-3xl md:text-4xl font-bold text-brand-white leading-tight">
-              A Conglomerate Built on{" "}
-              <span className="text-brand-emerald">Integration</span>
+              A Group Built on{" "}
+              <span className="text-brand-emerald">Vertical Integrated Business Growth</span>
             </h2>
             <div className="mt-6 space-y-4 text-brand-grey leading-relaxed">
               <p>
-                Gastec Group of Companies is a diversified industrial conglomerate
+                Gastec Group of Companies is a diversified industrial group
                 operating at the intersection of energy, natural resources, and
                 advanced technology. Our integrated model brings together ten
                 specialized business units under one strategic umbrella.

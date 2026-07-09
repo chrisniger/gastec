@@ -58,7 +58,7 @@ export default function Hero() {
             <span className="text-brand-emerald">Intelligence.</span> Unified.
           </h1>
           <p className="mt-6 text-lg md:text-xl text-brand-grey max-w-2xl leading-relaxed">
-            An integrated conglomerate powering the future through innovation in
+            A diversified industrial group powering the future through innovation in
             energy, natural resources, and artificial intelligence — delivering
             sustainable solutions across the global value chain.
           </p>
