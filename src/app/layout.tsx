@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Gastec Group of Companies | Energy, Resources & AI",
   description:
-    "An integrated energy, resources, and AI conglomerate delivering world-class solutions across the global energy value chain.",
+    "An integrated energy, resources, and AI group delivering world-class solutions across the global energy value chain.",
   keywords: [
     "energy",
     "oil and gas",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gastec Group of Companies | Energy, Resources & AI",
     description:
-      "An integrated energy, resources, and AI conglomerate delivering world-class solutions across the global energy value chain.",
+      "An integrated energy, resources, and AI group delivering world-class solutions across the global energy value chain.",
     type: "website",
     locale: "en_US",
     siteName: "Gastec Group",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gastec Group of Companies | Energy, Resources & AI",
     description:
-      "An integrated energy, resources, and AI conglomerate delivering world-class solutions across the global energy value chain.",
+      "An integrated energy, resources, and AI group delivering world-class solutions across the global energy value chain.",
   },
 };
 

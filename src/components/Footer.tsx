@@ -35,7 +35,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-brand-grey leading-relaxed mb-6">
-              An integrated energy, resources, and AI conglomerate delivering
+              An integrated energy, resources, and AI group delivering
               world-class solutions across the global energy value chain.
             </p>
             <div className="flex items-center gap-4">
