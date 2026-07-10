@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Globe, ExternalLink, Mail, Phone, MapPin } from "lucide-react";
+import { Globe, ExternalLink, Mail } from "lucide-react";
 
 const businessUnits = [
   "AI & Agentic Intelligence",
@@ -21,6 +21,13 @@ const companyLinks = [
   { label: "Sustainability", href: "#sustainability" },
   { label: "Insights", href: "#insights" },
   { label: "Contact", href: "#contact" },
+];
+
+const contacts = [
+  { label: "General Inquiries", email: "info@gastecgroup.com" },
+  { label: "Sales and Global Business Opportunity", email: "businessdevelopment@gastecgroup.com" },
+  { label: "Investor Relations", email: "ir@gastecgroup.com" },
+  { label: "Employment", email: "Hr@gastecgroup.com" },
 ];
 
 export default function Footer() {
@@ -94,22 +101,17 @@ export default function Footer() {
               Contact
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3">
-                <Mail size={16} className="text-brand-emerald mt-0.5 shrink-0" />
-                <span className="text-sm text-brand-grey">info@gastecgroup.com</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Phone size={16} className="text-brand-emerald mt-0.5 shrink-0" />
-                <span className="text-sm text-brand-grey">+1 (555) 000-0000</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin size={16} className="text-brand-emerald mt-0.5 shrink-0" />
-                <span className="text-sm text-brand-grey">
-                  Energy Tower, Business District
-                  <br />
-                  Houston, TX 77001
-                </span>
-              </li>
+              {contacts.map((contact) => (
+                <li key={contact.email} className="flex items-start gap-3">
+                  <Mail size={16} className="text-brand-emerald mt-0.5 shrink-0" />
+                  <div className="flex flex-col">
+                    <span className="text-sm text-brand-white font-medium">
+                      {contact.label}
+                    </span>
+                    <span className="text-sm text-brand-grey">{contact.email}</span>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
