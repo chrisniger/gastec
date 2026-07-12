@@ -15,12 +15,12 @@ const businessUnits = [
 ];
 
 const companyLinks = [
-  { label: "About Us", href: "#about" },
-  { label: "Our Focus", href: "#focus" },
-  { label: "Capabilities", href: "#capabilities" },
-  { label: "Sustainability", href: "#sustainability" },
-  { label: "Insights", href: "#insights" },
-  { label: "Contact", href: "#contact" },
+  { label: "About Us", href: "/#about" },
+  { label: "Our Focus", href: "/#focus" },
+  { label: "Capabilities", href: "/#capabilities" },
+  { label: "Sustainability", href: "/#sustainability" },
+  { label: "Insights", href: "/#insights" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const contacts = [
