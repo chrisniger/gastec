@@ -11,28 +11,28 @@ const capabilities = [
     title: "Artificial Intelligence",
     description:
       "Deploying autonomous agents and machine learning models that transform industrial decision-making. Our AI division delivers predictive maintenance, process optimization, and real-time operational intelligence across energy assets.",
-    gradient: "from-brand-emerald/20 to-brand-black",
+    image: "/images/capabilities/artificial-intelligence.jpg",
   },
   {
     icon: Flame,
     title: "Gas & LNG Value Chain",
     description:
       "End-to-end expertise in natural gas processing, LNG liquefaction, and distribution infrastructure. We engineer solutions from wellhead to end-user, optimizing every node in the gas supply chain.",
-    gradient: "from-orange-500/20 to-brand-black",
+    image: "/images/capabilities/gas-lng-value-chain.jpg",
   },
   {
     icon: Mountain,
     title: "Mining & Critical Minerals",
     description:
       "Exploration, feasibility, and sustainable extraction of rare earth elements and critical minerals essential for the global energy transition. Our mining division balances resource development with environmental stewardship.",
-    gradient: "from-amber-500/20 to-brand-black",
+    image: "/images/capabilities/mining-critical-minerals.jpg",
   },
   {
     icon: CircleDot,
     title: "Pipeline & Gas Infrastructure",
     description:
       "Designing, building, and maintaining high-pressure pipeline networks and gas infrastructure that form the backbone of regional and international energy systems. Safety and reliability are engineered into every mile.",
-    gradient: "from-blue-500/20 to-brand-black",
+    image: "/images/capabilities/pipeline-gas-infrastructure.jpg",
   },
 ];
 
@@ -88,10 +88,18 @@ export default function CapabilitiesSection() {
                   </p>
                 </div>
                 <div
-                  className={`h-64 rounded-xl bg-gradient-to-br ${cap.gradient} border border-brand-emerald/10 ${
+                  className={`relative h-64 rounded-xl overflow-hidden border border-brand-emerald/10 ${
                     !isEven ? "lg:order-1" : ""
                   }`}
-                />
+                >
+                  <img
+                    src={cap.image}
+                    alt={cap.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-black/60 via-transparent to-transparent" />
+                </div>
               </motion.div>
             );
           })}

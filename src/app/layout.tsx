@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Gastec Group of Companies | Energy, Resources & AI",
   description:
     "An integrated energy, resources, and AI group delivering world-class solutions across the global energy value chain.",
+  icons: {
+    icon: "/fav.png",
+  },
   keywords: [
     "energy",
     "oil and gas",

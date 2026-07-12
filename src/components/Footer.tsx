@@ -2,16 +2,16 @@ import Link from "next/link";
 import { Globe, ExternalLink, Mail } from "lucide-react";
 
 const businessUnits = [
-  "AI & Agentic Intelligence",
-  "Exploration & Production",
-  "Rare Earth Mining",
-  "Offshore & Marine",
-  "Natural Gas & LNG",
-  "Alternative Fuels",
-  "Water & Environment",
-  "Power & Transmission",
-  "Energy Pipelines",
-  "Innovation & Technology",
+  { label: "AI & Agentic Intelligence", href: "/focus/ai-agentic-intelligence" },
+  { label: "Oil & Gas Exploration", href: "/focus/oil-gas-exploration-production" },
+  { label: "Mining & Critical Minerals", href: "/focus/mining-critical-minerals" },
+  { label: "Offshore & Marine", href: "/focus/offshore-marine" },
+  { label: "Natural Gas & LNG", href: "/focus/natural-gas" },
+  { label: "Alternative Fuels", href: "/focus/alternative-fuels" },
+  { label: "Water & Environment", href: "/focus/water-environment" },
+  { label: "Power & Transmission", href: "/focus/power-transmission" },
+  { label: "Energy Pipelines", href: "/focus/pipelines-gas-infrastructure" },
+  { label: "Smart Mobility", href: "/focus/integrated-urban-rural-multimodal" },
 ];
 
 const companyLinks = [
@@ -69,10 +69,13 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               {businessUnits.map((unit) => (
-                <li key={unit}>
-                  <span className="text-sm text-brand-grey hover:text-brand-white transition-colors cursor-default">
-                    {unit}
-                  </span>
+                <li key={unit.href}>
+                  <Link
+                    href={unit.href}
+                    className="text-sm text-brand-grey hover:text-brand-emerald transition-colors"
+                  >
+                    {unit.label}
+                  </Link>
                 </li>
               ))}
             </ul>
