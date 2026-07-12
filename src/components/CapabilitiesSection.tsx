@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 import { Brain, Flame, Mountain, CircleDot } from "lucide-react";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
@@ -92,11 +93,13 @@ export default function CapabilitiesSection() {
                     !isEven ? "lg:order-1" : ""
                   }`}
                 >
-                  <img
+                  <Image
                     src={cap.image}
                     alt={cap.title}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    className="object-cover transition-transform duration-500 hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-black/60 via-transparent to-transparent" />
                 </div>

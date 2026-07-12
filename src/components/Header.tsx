@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 
@@ -86,9 +87,12 @@ export default function Header() {
     >
       <div className="container-gastec flex items-center justify-between h-20">
         <Link href="/" className="flex items-center gap-2">
-          <img
+          <Image
             src="/logo.png"
             alt="Gastec Group of Companies"
+            width={120}
+            height={40}
+            priority
             className="h-10 w-auto"
           />
         </Link>
