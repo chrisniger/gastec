@@ -53,9 +53,10 @@ export default function SustainabilitySection() {
           <p className="mt-4 text-brand-grey max-w-2xl mx-auto">
             ESG principles embedded into every decision, every operation, every
             partnership.
-            
-            Gastec Group, a Global Energy actor leading the path to a net-zero future
-through Decarbonization with Energy Transition solutions for commercial and industrial sector growth
+
+            Gastec Group, a Global Energy actor leading the path to a net-zero
+            future through Decarbonization with Energy Transition solutions for
+            commercial and industrial sector growth
           </p>
         </motion.div>
 
