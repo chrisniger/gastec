@@ -62,7 +62,7 @@ export default function AboutSection() {
             <p className="eyebrow mb-4">Who We Are</p>
             <h2 className="text-3xl md:text-4xl font-bold text-brand-white leading-tight">
               A Group Built on{" "}
-              <span className="text-brand-emerald">Vertical Integrated Business Growth</span>
+              <span className="text-brand-emerald"> Integrated Business Growth</span>
             </h2>
             <div className="mt-6 space-y-4 text-brand-grey leading-relaxed">
               <p>

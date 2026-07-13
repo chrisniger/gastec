@@ -90,10 +90,10 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt="Gastec Group of Companies"
-            width={120}
-            height={40}
+            width={180}
+            height={60}
             priority
-            className="h-10 w-auto"
+            className="h-[60px] w-auto"
           />
         </Link>
 

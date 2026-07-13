@@ -56,7 +56,7 @@ export default function CapabilitiesSection() {
             Capabilities
           </h2>
           <p className="mt-4 text-brand-grey max-w-2xl mx-auto">
-            Deep domain expertise across our core verticals, delivering integrated
+            Deep domain expertise across our core capabilities, delivering integrated
             solutions at scale.
           </p>
         </motion.div>
