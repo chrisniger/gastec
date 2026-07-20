@@ -1,6 +1,5 @@
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
-import GlobalPresenceSection from "@/components/GlobalPresenceSection";
 import FocusSection from "@/components/FocusSection";
 import CapabilitiesSection from "@/components/CapabilitiesSection";
 import SustainabilitySection from "@/components/SustainabilitySection";
@@ -13,7 +12,6 @@ export default function Home() {
     <>
       <Hero />
       <AboutSection />
-      <GlobalPresenceSection />
       <FocusSection />
       <CapabilitiesSection />
       <SustainabilitySection />

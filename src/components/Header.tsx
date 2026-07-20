@@ -32,7 +32,7 @@ const navLinks = [
   { label: "Capabilities", href: "/#capabilities" },
   { label: "Sustainability", href: "/#sustainability" },
   { label: "Insights", href: "/#insights" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
@@ -157,7 +157,7 @@ export default function Header() {
 
         <div className="hidden md:block">
           <Link
-            href="/#contact"
+            href="/contact"
             className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-brand-black bg-brand-emerald rounded-full hover:bg-brand-emeraldDark transition-colors duration-200"
           >
             Get in Touch
@@ -237,7 +237,7 @@ export default function Header() {
                 );
               })}
               <Link
-                href="/#contact"
+                href="/contact"
                 onClick={() => setMobileOpen(false)}
                 className="inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-brand-black bg-brand-emerald rounded-full hover:bg-brand-emeraldDark transition-colors mt-2"
               >

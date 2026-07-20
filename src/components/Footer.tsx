@@ -20,7 +20,7 @@ const companyLinks = [
   { label: "Capabilities", href: "/#capabilities" },
   { label: "Sustainability", href: "/#sustainability" },
   { label: "Insights", href: "/#insights" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const contacts = [
