@@ -8,8 +8,8 @@ import { useReducedMotion } from "@/hooks/useReducedMotion";
 const offices = [
   {
     region: "Corporate Headquarters",
-    title: "North & South America Regional Corporate Office",
-    address: ["1500 East Capitol,", "Northeast Ste, DC, USA"],
+    title: "WASHINGTON DC OFFICE",
+    address: ["1500 East Capitol Street,", "NE Washington DC, 20003, USA."],
     email: null,
   },
   {
